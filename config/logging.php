@@ -59,6 +59,12 @@ return [
             'path' => storage_path('logs/laravel.log'),
             'level' => env('LOG_LEVEL', 'debug'),
         ],
+        //for custom log
+          'FirstController' => [
+            'driver' => 'single',
+            'path' => storage_path('logs/controller/FirstController.log'),
+            'level' => env('LOG_LEVEL', 'debug'),
+        ],
 
         'daily' => [
             'driver' => 'daily',
